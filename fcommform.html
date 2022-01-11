@@ -24,31 +24,54 @@
             Cliquez <a href = "../index.html">ici</a> pour revenir à l'accueil.
         </p>
 		<form>
-			<h5>
-				Bienvenue mon reuf dans ton formulaire
-			</h5>
-			<label for = "nom">
-				Quel est votre nom ?
-			</label>
-			<br/>
-			<input type = "text" id = "nom" name = "nom" value = "non">
-			<br/>
-			<label for = "prénom">
-				Quel est votre prénom ?
-			</label>
-			<br/>
-			<input type = "text" id = "prénom" name = "prénom" value = "non">
-			<p>
-				Est-ce que ça va ?
-			</p>
-			<input type = radio id = "oui" value = "oui" checked>
-			<label for = "oui">
-				non
-			</label><br/>
-			<input type = radio id = "non" value = "non" checked>
-			<label for = "non">
-				non
-			</label>
+			<h3>
+				Formulaire | ENT
+			</h3>
+
+			<div>
+				<p>
+					Souhaitez-vous accéder à vos horaires de travail ?
+				</p>
+				<div>
+					<input type = "radio" id = "oui" name = "horaire" value = "oui">
+					<label for = "oui">
+						Oui
+					</label>
+				</div>
+				<div>
+					<input type = "radio" id = "non" name = "horaire" value = "non">
+					<label for = "non">
+						Non
+					</label>
+				</div>
+			</div>
+		
+			<div>
+				<p>
+					Comment jugez-vous l'utilité d'avoir un ENT ? <br/>
+					(1 : Pas utile | 5 : Très utile)
+				</p>
+				<input type = "range" list = "tickmarks" min = "1" max = "5" step = "1" title = ""> <!-- A FINIR / COMPLETER -->
+				<datalist id = "tickmarcks">
+				<option value = "1">
+				<option value = "2">
+				<option value = "3">
+				<option value = "4">
+				<option value = "5">
+				</datalist>
+			</div>
+
+			<div>
+				<label for = "proposition">
+					Est-ce que vous avez des propositions pour améliorer l'ENT de notre entreprise ? 
+				</label>
+				<br/>
+				<textarea id = "proposition" name = "proposition" rows = "5" cols ="75" style = "resize:none;" placeholder = "Saisissez vos propositions ici..."></textarea>
+			</div>
+			<button>
+				Valider le questionnaire
+			</button>
 		</form>
 	</body>
 </html>
+
