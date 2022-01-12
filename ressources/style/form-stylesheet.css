@@ -4,3 +4,23 @@
 																							/*                               */
 																							/*********************************/
 
+body {
+	font-family: Roboto, Helvetica Neue, Arial;
+}
+
+fieldset {
+	border-color : yellow;
+	margin-top :5%;
+	margin-left: 25%;
+	margin-right: 25%;
+	border-style: groove;
+	border-width: 6px;
+}
+
+.subtitle {
+	text-align: center;
+}
+
+.main-title {
+	text-align: center;
+}
