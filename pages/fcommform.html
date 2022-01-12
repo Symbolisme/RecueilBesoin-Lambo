@@ -13,14 +13,15 @@
 			ENT | Commercial - Lamborghini
 		</title>
 		
-		<link rel = "stylesheet" type = "text/css" href = "./ressources/style/ent-stylesheet.css">
-		<script src = "./ressources/script/ent-script.js"></script>
+		<link rel = "stylesheet" type = "text/css" href = "../ressources/style/form-stylesheet.css">
+		<script src = "../ressources/script/ent-script.js"></script>
     </head>
 	<body>
-		<h3>
-			Bienvenue sur l'ENT du secteur Commercial.
+		<!-- Ceci est un titre -->
+		<h1 class = "main-title">
+			BIENVENUE SUR L'ENT DU SECTEUR COMMERCIAL
 		</h3>
-        <p>
+        <p class = "subtitle">
             Cliquez <a href = "../index.html">ici</a> pour revenir à l'accueil.
         </p>
 		<form>
@@ -29,31 +30,20 @@
 					Formulaire | Fonction Commerciale
 				</legend>
 				
-			<!-- Ceci est un titre -->
-				<h3>
-					Bienvenue sur l'ENT du secteur Commercial.
-				</h3>
-				<p>
-					Cliquez <a href = "../index.html">ici</a> pour revenir à l'accueil.
-				</p>
-				<form>
-					<h3>
-						Formulaire | ENT
-					</h3>
-			
+				<form>			
 			<!-- Ceci est la formulation d'une question avec 2 possibilités de reponse unique -->
 			<!-- Question n°1-->
-					<div>
-						<p>
+					<div class = "question1">
+						<p class = "question">
 							Souhaitez-vous accéder à vos horaires de travail ?
 						</p>
-						<div>
+						<div class = "reponse">
 							<input type = "radio" id = "oui" name = "horaire" value = "oui">
 							<label for = "oui">
 								Oui
 							</label>
 						</div>
-						<div>
+						<div class = "reponse">
 							<input type = "radio" id = "non" name = "horaire" value = "non">
 							<label for = "non">
 								Non
@@ -62,179 +52,196 @@
 					</div>
 			
 			<!-- Question n°2-->
-					<p>
-						Es ce que vous souhaiterez accéder à votre salaire ?
-					</p>
-					<div>
-						<input type = "radio" id = "oui" name = "salaire" value = "oui">
-						<label for = "oui">
-							Oui
-						</label>
+					<div class = "question2">
+						<p class = "question">
+							Souhaiterez-vous accéder à votre salaire ?
+						</p>
+						<div  class = "réponse">
+							<input type = "radio" id = "oui" name = "salaire" value = "oui">
+							<label for = "oui">
+								Oui
+							</label>
+						</div>
+						<div class = "réponse">
+							<input type = "radio" id = "non" name = "salaire" value = "non">
+							<label for = "non">
+								Non
+							</label>
+						</div>
 					</div>
-					<div>
-						<input type = "radio" id = "non" name = "salaire" value = "non">
-						<label for = "non">
-							Non
-						</label>
-					</div>
-			
 			<!-- Question n°3-->
-					<p>
-						Es ce que vous souhaiterez accéder à vos primes ?
-					</p>
-					<div>
-						<input type = "radio" id = "oui" name = "primes" value = "oui">
-						<label for = "oui">
-							Oui
-						</label>
+			        <div class = "question3">
+				        <p class = "question">
+				            Souhaiterez-vous accéder à vos primes ?
+					   </p>
+					   <div class = "réponse">
+						    <input type = "radio" id = "oui" name = "primes" value = "oui">
+				            <label for = "oui">
+							    Oui
+						    </label>
+					    </div>
+					    <div class = "réponse">
+						    <input type = "radio" id = "non" name = "primes" value = "non">
+						    <label for = "non">
+							    Non
+						     </label>
+					     </div>
 					</div>
-					<div>
-						<input type = "radio" id = "non" name = "primes" value = "non">
-						<label for = "non">
-							Non
-						</label>
-					</div>
-			
 			<!-- Question n°4-->
-					<p>
-						Es ce que vous souhaiterez accéder à voir un vos chiffres (nb de voitures vendus, chiffre d’affaire) de la journée ?
-					</p>
-					<div>
-						<input type = "radio" id = "oui" name = "chiffres" value = "oui">
-						<label for = "oui">
-							Oui
-						</label>
-					</div>
-					<div>
-						<input type = "radio" id = "non" name = "chiffres" value = "non">
-						<label for = "non">
-							Non
-						</label>
+					<div class = "question4">
+						<p class = "question">
+							Est-ce que vous souhaiterez accéder à voir un vos chiffres (nombre de voitures vendues, chiffre d’affaire) de la journée ?
+						</p>
+						<div class = "réponse">
+							<input type = "radio" id = "oui" name = "chiffres" value = "oui">
+							<label for = "oui">
+								Oui
+							</label>
+						</div>
+						<div class = "réponse">
+							<input type = "radio" id = "non" name = "chiffres" value = "non">
+							<label for = "non">
+								Non
+							</label>
+						</div>
 					</div>
 			
 			<!-- Question n°5-->
-					<p>
-						Es ce que vous souhaiterez avoir un accès direct à la messagerie de l' entreprise via l'ENT ?
-					</p>
-					<div>
-						<input type = "radio" id = "oui" name = "messagerie" value = "oui">
-						<label for = "oui">
-							Oui
-						</label>
-					</div>
-					<div>
-						<input type = "radio" id = "non" name = "messagerie" value = "non">
-						<label for = "non">
-							Non
-						</label>
+					<div class = "question5">
+						<p class = "question">
+							Souhaiterez-vous avoir un accès direct à la messagerie de l'entreprise via l'ENT ?
+						</p>
+						<div class = "réponse">
+							<input type = "radio" id = "oui" name = "messagerie" value = "oui">
+							<label for = "oui">
+								Oui
+							</label>
+						</div>
+						<div class = "réponse">
+							<input type = "radio" id = "non" name = "messagerie" value = "non">
+							<label for = "non">
+								Non
+							</label>
+						</div>
 					</div>
 			
 			<!-- Question n°6-->
-					<p>
-						Es ce que vous souhaiterez avoir un espaces dédiés à votre service pour pouvoir échanger avec vos collègues ?
-					</p>
-					<div>
-						<input type = "radio" id = "oui" name = "échange" value = "oui">
-						<label for = "oui">
-							Oui
-						</label>
-					</div>
-					<div>
-						<input type = "radio" id = "non" name = "échange" value = "non">
-						<label for = "non">
-							Non
-						</label>
+					<div class = "question6">
+						<p class = "question">
+							Est-ce que vous souhaiterez avoir un espaces dédiés à votre service pour pouvoir échanger avec vos collègues ?
+						</p>
+						<div class = "réponse">
+							<input type = "radio" id = "oui" name = "échange" value = "oui">
+							<label for = "oui">
+								Oui
+							</label>
+						</div>
+						<div class = "réponse">
+							<input type = "radio" id = "non" name = "échange" value = "non">
+							<label for = "non">
+								Non
+							</label>
+						</div>
 					</div>
 			
 			<!-- Question n°7-->
-					<p>
-						Voudriez vous accédé aux statistique des ventes personnel de chaque semaines ?
-
-					</p>
-					<div>
-						<input type = "radio" id = "oui" name = "ventesperso" value = "oui">
-						<label for = "oui">
-							Oui
-						</label>
-					</div>
-					<div>
-						<input type = "radio" id = "non" name = "ventesperso" value = "non">
-						<label for = "non">
-							Non
-						</label>
+					<div class = "question7">
+						<p class = "question">
+							Voudriez vous accédé aux statistique des ventes personnel de chaque semaines ?
+						</p>
+						<div class = "réponse">
+							<input type = "radio" id = "oui" name = "ventesperso" value = "oui">
+							<label for = "oui">
+								Oui
+							</label>
+						</div>
+						<div class = "réponse">
+							<input type = "radio" id = "non" name = "ventesperso" value = "non">
+							<label for = "non">
+								Non
+							</label>
+						</div>
 					</div>
 			
 			<!-- Question n°8-->
-					<p>
-					Es ce que vous souhaitez avoir un acceder a la messagerie de l’entreprise pour contacter la direction ?
-					</p>
-					<div>
-						<input type = "radio" id = "oui" name = "messageriedirection" value = "oui">
-						<label for = "oui">
-							Oui
-						</label>
-					</div>
-					<div>
-						<input type = "radio" id = "non" name = "messageriedirection" value = "non">
-						<label for = "non">
-							Non
-						</label>
+					<div class = "question8">
+						<p class = "question">
+							Es ce que vous souhaitez avoir un acceder a la messagerie de l’entreprise pour contacter la direction ?
+						</p>
+						<div class = "réponse">
+							<input type = "radio" id = "oui" name = "messageriedirection" value = "oui">
+							<label for = "oui">
+								Oui
+							</label>
+						</div>
+						<div class = "réponse">
+							<input type = "radio" id = "non" name = "messageriedirection" value = "non">
+							<label for = "non">
+								Non
+							</label>
+						</div>
 					</div>
 			
 			<!-- Question n°9-->
-					<p>
-						Es ce que vous souhaiterez accéder aux informations quotidiennes de l’entreprises ?
-					</p>
-					<div>
-						<input type = "radio" id = "oui" name = "informations" value = "oui">
-						<label for = "oui">
-							Oui
-						</label>
-					</div>
-					<div>
-						<input type = "radio" id = "non" name = "informations" value = "non">
-						<label for = "non">
-							Non
-						</label>
+					<div class = "question9">
+						<p class = "question">
+							Es ce que vous souhaiterez accéder aux informations quotidiennes de l’entreprises ?
+						</p>
+						<div class = "réponse">
+							<input type = "radio" id = "oui" name = "informations" value = "oui">
+							<label for = "oui">
+								Oui
+							</label>
+						</div>
+						<div class = "réponse">
+							<input type = "radio" id = "non" name = "informations" value = "non">
+							<label for = "non">
+								Non
+							</label>
+						</div>
 					</div>
 			
 			<!-- Question n°10-->
-					<p>
-						Si oui Es ce que vous préfériez une page dédié ou clament un zone discrète
-					</p>
-					<div>
-						<input type = "radio" id = "oui" name = "informations2" value = "oui">
-						<label for = "oui">
-							Oui
-						</label>
+					<div class = "question10">
+						<p class = "question">
+							Si oui Es ce que vous préfériez une page dédié ou clament un zone discrète
+						</p>
+						<div class = "réponse">
+							<input type = "radio" id = "oui" name = "informations2" value = "oui">
+							<label for = "oui">
+								Oui
+							</label>
+						</div>
+						<div class = "réponse">
+							<input type = "radio" id = "non" name = "informations2" value = "non">
+							<label for = "non">
+								Non
+							</label>
+						</div>
 					</div>
-					<div>
-						<input type = "radio" id = "non" name = "informations2" value = "non">
-						<label for = "non">
-							Non
-						</label>
-					</div>
-                  
+					
             <!-- Ceci est une question avec possibilité d'adapter la position u curseur enf fonction de la réponse-->
 			<!-- Question n°11-->
-					<div>
-						<p>
-							Comment jugez-vous l'utilité d'avoir un ENT ? <br/>
-							(1 : Pas utile | 5 : Très utile)
-						</p>
-						<input type = "range" list = "tickmarks" min = "1" max = "5" step = "1" title = ""> <!-- A FINIR / COMPLETER -->
-						<datalist id = "tickmarcks">
-						<option value = "1">
-						<option value = "2">
-						<option value = "3">
-						<option value = "4">
-						<option value = "5">
-						</datalist>
-					</div>
+						<div class = "question11">
+							<p class = "question">
+								Comment jugez-vous l'utilité d'avoir un ENT ? <br/>
+								(1 : Pas utile | 5 : Très utile)
+							</p>
+							<div class = "réponse">
+							<input type = "range" list = "tickmarks" min = "1" max = "5" step = "1" title = ""> <!-- A FINIR / COMPLETER -->
+							<datalist id = "tickmarcks">
+							<option value = "1">
+							<option value = "2">
+							<option value = "3">
+							<option value = "4">
+							<option value = "5">
+							</datalist>
+							</div>
+						</div>
 			
 			<!-- Ceci est une question avec possibilité de repondre dans une zone predéfinie-->
 			<!-- Question n°12-->
-					<div>
+					<div class = "réponse">
 						<details>
 							<summary>
 								<label for = "proposition">
