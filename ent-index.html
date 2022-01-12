@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!--- Méta données -->
+		
+		<meta http-equiv = "content-type" content = "text/html; charset=utf-8"/>
+		<meta name = "author" content = "Jarod Albertini Mathis Beaufils"/>
+		<meta name = "created" content = "2021-12-10"/>
+		<meta name = "changed" content = "2022-01-09"/>
+		<meta name = "description" content = "Recueil de besoins sur Lamborghini."/>
+		
+		<title>
+			ENT - Lamborghini
+		</title>
+		
+		<link rel = "stylesheet" type = "text/css" href = "./ressources/style/ent-stylesheet.css">
+		<script src = ./ressources/script/ent-script.js></script>
+    </head>
+	<body>
+		<h3>
+			Bienvenue sur l'ENT de Lamborghini.
+		</h3>
+
+		<h5>
+			Veuillez répondre à ces quelques questions avant de commencer.
+		</h5>
+
+		<form onsubmit = "return redirect()">
+			<table>
+				<tr>
+					<td>
+						<label for = "nom">
+							Nom
+						</label>
+					</td>
+					<td>
+						<label for = "prenom">
+							Prénom
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type = "text" id = "nom" title = "Nom">
+					</td>
+					<td>
+						<input type = "text" id = "prenom" title = "Prénom">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for = "fonction">
+							Choisissez votre fonction au sein de l'entreprise :
+						</label>
+						<br/>
+						<br/>
+						<select id = "fonction" name = "fonction">
+							<option value = "fcommform.html">
+								Fonction Commerciale
+							</option>
+							<option value = "fadminform.html">
+								Fonction Administrative
+							</option>
+							<option value = "fprodform.html">
+								Fonction Production
+							</option>
+						</select>
+					</td>
+				</tr>	
+				<tr>
+					<td>
+						<input type = "submit" id = "submit" value = "Confirmer">
+					</td>
+				</tr>			
+			</table>
+			<br/>
+		</form>
+	</body>
+</html>
