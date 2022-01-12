@@ -11,5 +11,6 @@ body {
 fieldset {
 	margin-left: 50%;
 	border-style: groove;
+	border-style: 10px;
 
 }

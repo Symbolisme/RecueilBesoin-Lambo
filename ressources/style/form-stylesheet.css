@@ -5,16 +5,38 @@
 																							/*********************************/
 
 body {
+	margin:0;
 	font-family: Roboto, Helvetica Neue, Arial;
 }
 
+
+header {
+	padding:10px;
+	margin:0;
+	background-color : black;
+	color : white;
+	text-align:center;
+}
+legend {
+	width: 400px;
+	text-align: center;
+	text-transform: uppercase;
+	color : rgb(216 , 160 , 22);
+	background : repeat url(../images/carbon.jpg);
+	border-width: 3px;
+	border-style: groove;
+	border-color: rgb(216 , 160 , 22);
+}
 fieldset {
-	border-color : yellow;
+	color : rgb(216 , 160 , 22);
+	background : repeat url(../images/carbon.jpg);
+	border-color : rgb(216 , 160 , 22);
 	margin-top :5%;
 	margin-left: 25%;
 	margin-right: 25%;
 	border-style: groove;
 	border-width: 6px;
+
 }
 
 .subtitle {
@@ -23,4 +45,63 @@ fieldset {
 
 .main-title {
 	text-align: center;
+}
+
+input[type='range']:after {
+	background-color: rgb(216 , 160 , 22);
+}
+
+
+/* Custom Radio Buttons */
+
+input[type='radio']:after {
+	width: 10px;
+	height: 10px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #d1d3d1;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+	width: 10px;
+	height: 10px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: rgb(216 , 160 , 22);
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+/* */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      -webkit-appearance: none;
+      background-color: #d1d3d1;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      -webkit-appearance: none;
+      color: rgb(216 , 160 , 22);
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 20px;
+      -webkit-appearance: none;
+      height: 15px;
+      background: #434343;
+      box-shadow: -80px 0 0 80px rgb(216 , 160 , 22);
+    }
+
 }
