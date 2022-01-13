@@ -6,23 +6,38 @@
 		<meta http-equiv = "content-type" content = "text/html; charset=utf-8"/>
 		<meta name = "author" content = "Jarod Albertini Mathis Beaufils"/>
 		<meta name = "created" content = "2021-12-15"/>
-		<meta name = "changed" content = "2021-12-15"/>
+		<meta name = "changed" content = "2021-01-12"/>
 		<meta name = "description" content = "Recueil de besoins sur Lamborghini."/>
 		
 		<title>
 			ENT | Administration - Lamborghini
 		</title>
-		
+		<link rel = "icon" href = "../ressources/images/logo.png" type = "image/x-icon">
 		<link rel = "stylesheet" type = "text/css" href = "../ressources/style/form-stylesheet.css">
 		<script src = "../ressources/script/ent-script.js"></script>
     </head>
-	<body>
-		<h3>
-			Bienvenue sur l'ENT du secteur administratif.
-		</h3>
-        <p>
-            Cliquez <a href = "../index.html">ici</a> pour revenir à l'accueil.
-        </p>
+	<body style = "background: fixed url(../ressources/images/gallery_1.jpg);">
+		<header>
+			<table>
+				<tr>
+					<td>
+						<div class = "zoom">
+							<a href = "./ent-index.html">
+								<img style = "margin-left: -270px;" src="https://upload.wikimedia.org/wikipedia/fr/thumb/1/1d/Lamborghini-Logo.svg/1200px-Lamborghini-Logo.svg.png" class="css-1ux6sy9" alt="" height="140" width="130">
+							</a>
+						</div>
+					</td>
+					<td>
+	
+					</td>
+					<td>
+						<h1>
+							BIENVENUE SUR L'<span style = "color : rgb(216 , 160 , 22);">ENT</span> DU <span style = "color : rgb(216 , 160 , 22);">SECTEUR ADMINISTRATIF</span>
+						</h1>
+					</td>
+				</tr>
+			</table>
+		</header>
 		<form>
 			<fieldset>
                 <!-- Titre du Formulaire -->
@@ -33,7 +48,7 @@
                 <!-- Question n°1 -->
 				<div class = "question1">
 					<p class = "question">
-						Es ce que vous souhaitez avoir accéder à votre agenda ?
+						Est-ce que vous souhaitez accéder à votre agenda ?
 					</p>
 					<div class = "réponse">
 						<input type = "radio" id = "oui" name = "agenda" value = "oui">
@@ -52,7 +67,7 @@
                 <!-- Question n°2 -->
 				<div class = "question2">
 					<p class = "question">
-						Es ce que vous souhaitez accéder aux fiches des clients ?
+						Est-ce que vous souhaitez accéder aux fiches des clients ?
 					</p>
 					<div class = "réponse">
 						<input type = "radio" id = "oui" name = "ficheclient" value = "oui">
@@ -71,7 +86,7 @@
                 <!-- Question n°3 -->
 				<div class = "question3">
 					<p class = "question">
-						Es ce que vous souhaitez avoir accès au chiffre des employé de l' entreprise ?
+						Est-ce que vous souhaitez avoir accès aux chiffres des employés de l'entreprise ?
 					</p>
 					<div class = "réponse">
 						<input type = "radio" id = "oui" name = "chiffres" value = "oui">
@@ -87,29 +102,29 @@
 					</div>
 				</div>
               
-              <!-- Question n°4 -->
-			  <div class = "question4">
+            <!-- Question n°4 -->
+			<div class = "question4">
 				<p class = "question">
-						Es ce que vous souhaitez pouvoir avoir un accès au statistique de la vente de vos produits ?
-					</p>
-					<div class = "réponse">
-						<input type = "radio" id = "oui" name = "ventes" value = "oui">
-						<label for = "oui">
-							Oui
-						</label>
-					</div>
-					<div class = "réponse">
-						<input type = "radio" id = "non" name = "ventes" value = "non">
-						<label for = "non">
-							Non
-						</label>
-					</div>
+						Est-ce que vous souhaitez pouvoir avoir un accès aux statistiques de la vente de vos produits ?
+				</p>
+				<div class = "réponse">
+					<input type = "radio" id = "oui" name = "ventes" value = "oui">
+					<label for = "oui">
+						Oui
+					</label>
 				</div>
+				<div class = "réponse">
+					<input type = "radio" id = "non" name = "ventes" value = "non">
+					<label for = "non">
+						Non
+					</label>
+				</div>
+			</div>
 
                 <!-- Question n°5 -->
                 <div class = "question5">
 					<p class = "question">
-						Es ce que vous souhaitez avoir un catalogue contenant la totalité de vos produits ?
+						Souhaitez-vous avoir un catalogue contenant la totalité de vos produits ?
 					</p>
 					<div class = "réponse">
 						<input type = "radio" id = "oui" name = "catalogue" value = "oui">
@@ -128,7 +143,7 @@
                 <!-- Question n°6 -->
 				<div class = "question6">
 					<p class = "question">
-						Es ce que vous souhaitez avoir la possibilité consulter votre boîte mail sur l’ENT ?
+						Souhaitez-vous avoir la possibilité consulter votre boîte mail sur l’ENT ?
 					</p>
 					<div class = "réponse">
 						<input type = "radio" id = "oui" name = "boitemail" value = "oui">
@@ -147,7 +162,7 @@
                 <!-- Question n°7 -->
 				<div class = "question7">
 					<p class = "question">
-						Es ce que vous souhaitez pouvoir accéder à la présence de tous vos salariés en temps réel
+						Est-ce que vous souhaitez pouvoir accéder à la présence de tous vos salariés en temps réel ?
 					</p>
 					<div class = "réponse">
 						<input type = "radio" id = "oui" name = "présence" value = "oui">
@@ -166,7 +181,7 @@
                <!-- Question n°8 -->
 			   <div class = "question8">
 					<p class = "question">
-						Es ce que vous souhaiterez accéder aux informations quotidiennes de l’entreprises ?
+						Est-ce que vous souhaiterez accéder aux informations quotidiennes de l’entreprises ?
 					</p>
 					<div class = "réponse">
 						<input type = "radio" id = "oui" name = "informations" value = "oui">
@@ -185,7 +200,7 @@
                <!-- Question n°9 -->
 			   <div class = "question9">
 					<p class = "question">
-						Si oui Es ce que vous préfériez une page dédié ou clament un zone discrète
+						Si oui, est-ce que vous préfériez une page dédiée ou juste une zone discrète ?
 					</p>
 					<div class = "réponse">
 						<input type = "radio" id = "oui" name = "informations2" value = "oui">
@@ -204,7 +219,7 @@
                 <!-- Question n°10 -->
 				<div class = "question10	">
 					<p class = "question">
-						Es ce que vous souhaitez accéder au lien qui vous amène sur le site de caméra de surveillances
+						Est-ce que vous souhaitez accéder au lien qui vous amène sur le site de caméras de surveillance ?
 					</p>
 					<div class = "réponse">
 						<input type = "radio" id = "oui" name = "surveillances" value = "oui">
@@ -223,7 +238,7 @@
                 <!-- Ceci est une question avec possibilité d'adapter la position u curseur enf fonction de la réponse-->
 			    <!-- Question n°11-->
 				<div>
-					<p>
+					<p class = "question">
 						Comment jugez-vous l'utilité d'avoir un ENT ? <br/>
 						(1 : Pas utile | 5 : Très utile)
 					</p>
@@ -240,16 +255,26 @@
 			    <!-- Ceci est une question avec possibilité de repondre dans une zone predéfinie-->
 			    <!-- Question n°12-->
 				<div>
+					<br/>
 					<details>
 						<summary>
 							<label for = "proposition">
-								Est-ce que vous avez des propositions pour améliorer l'ENT de notre entreprise ? 
+								<p class = "question">
+									Est-ce que vous avez des propositions pour améliorer l'ENT de notre entreprise ? 
+								</p>		
 							</label>
 						</summary>
 						<br/>
 						<textarea id = "proposition" name = "proposition" rows = "5" cols ="75" style = "resize:none;" placeholder = "Saisissez vos propositions ici..."></textarea>
 					</details>	
 				</div>
+				<br/>
+				<br/>
+				<button href>
+					<a href = ./fendform.html>
+						Valider le formulaire
+					</a>
+				</button>
 			</fieldset>
 		</form>
 	</body>

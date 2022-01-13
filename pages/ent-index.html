@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!--- Méta données -->
+		
+		<meta http-equiv = "content-type" content = "text/html; charset=utf-8"/>
+		<meta name = "author" content = "Jarod Albertini Mathis Beaufils"/>
+		<meta name = "created" content = "2021-12-10"/>
+		<meta name = "changed" content = "2022-01-12"/>
+		<meta name = "description" content = "Recueil de besoins sur Lamborghini."/>
+		
+		<title>
+			ENT - Lamborghini
+		</title>
+		<link rel = "icon" href = "../ressources/images/logo.png" type = "image/x-icon">
+		<link rel = "stylesheet" type = "text/css" href = "../ressources/style/form-stylesheet.css">
+		<script src = ../ressources/script/ent-script.js></script>
+    </head>
+	<body style = "background: center fixed url(../ressources/images/countach_hp.jpg);">
+		<header>
+			<table style = "border-spacing : 350px 0px;">
+				<tr>
+					<td>
+						<div class = "zoom">
+							<img style = "margin-left: -550px;" src="https://upload.wikimedia.org/wikipedia/fr/thumb/1/1d/Lamborghini-Logo.svg/1200px-Lamborghini-Logo.svg.png" class="css-1ux6sy9" alt="" height="140" width="130">
+						</div>
+					</td>
+					<td>
+						<h1>
+							BIENVENUE SUR L'<span style = "color : rgb(216 , 160 , 22);">ENT</span> DE <span style = "color : rgb(216 , 160 , 22);">LAMBORGHINI</span>.
+						</h1>
+					</td>
+				</tr>
+			</table>
+		</header>
+
+		<form onsubmit = "return redirect()">
+			<fieldset style = "text-align: center;">
+				<h3>
+					Veuillez répondre à ces quelques questions avant de commencer.
+				</h3>
+				<p>
+					Ces questions aident à mettre en place le futur ENT dans votre entreprise, répondez-y avec sérieux.
+				</p>
+				<table>
+					<tr>
+						<td>
+							<label for = "nom">
+								Nom
+							</label>
+						</td>
+						<td>
+							<label for = "prenom">
+								Prénom
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type = "text" id = "nom" title = "Nom">
+						</td>
+						<td>
+							<input type = "text" id = "prenom" title = "Prénom">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<br/>
+							<br/>
+							<label for = "fonction">
+								Choisissez votre fonction au sein de l'entreprise :
+							</label>
+							<br/>
+							<br/>
+							<select id = "fonction" name = "fonction">
+								<option value = "./fcommform.html">
+									Fonction Commerciale
+								</option>
+								<option value = "./fadminform.html">
+									Fonction Administrative
+								</option>
+								<option value = "./fprodform.html">
+									Fonction Production
+								</option>
+							</select>
+						</td>
+					</tr>	
+					<tr>
+						<td colspan = "3">
+							<br/>
+							<br/>
+							<input type = "submit" id = "submit" value = "Confirmer">
+						</td>
+					</tr>			
+				</table>
+				<br/>
+			</fieldset>
+		</form>
+	</body>
+</html>

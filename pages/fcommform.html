@@ -6,30 +6,39 @@
 		<meta http-equiv = "content-type" content = "text/html; charset=utf-8"/>
 		<meta name = "author" content = "Jarod Albertini Mathis Beaufils"/>
 		<meta name = "created" content = "2021-12-15"/>
-		<meta name = "changed" content = "2021-12-15"/>
+		<meta name = "changed" content = "2021-01-12"/>
 		<meta name = "description" content = "Recueil de besoins sur Lamborghini."/>
 		
 		<title>
-			ENT | Commercial - Lamborghini
+			ENT Lamborghini | Formulaire - Fonction Commerciale
 		</title>
-		
+		<link rel = "icon" href = "../ressources/images/logo.png" type = "image/x-icon">
 		<link rel = "stylesheet" type = "text/css" href = "../ressources/style/form-stylesheet.css">
 		<script src = "../ressources/script/ent-script.js"></script>
     </head>
-	<body>
+	<body style = "background:fixed url(../ressources/images/sc20_overview.jpg);">
 		<!-- Ceci est un titre -->
 		<header>
-			<div>
-				<img src="https://upload.wikimedia.org/wikipedia/fr/thumb/1/1d/Lamborghini-Logo.svg/1200px-Lamborghini-Logo.svg.png" class="css-1ux6sy9" alt="" height="140" width="130">
-			</div>
-			<ul>
-				<h1 class = "main-title">
-				BIENVENUE SUR L'ENT DU SECTEUR COMMERCIAL
-				</h1>
-				<p class = "subtitle">
-				Cliquez <a href = "../index.html">ici</a> pour revenir à l'accueil.
-				</p>
-			</ul>
+			<table>
+				<tr>
+					<td>
+						<div class = "zoom">
+							<a href = "./ent-index.html">
+								<img style = "margin-left: -270px;" src="https://upload.wikimedia.org/wikipedia/fr/thumb/1/1d/Lamborghini-Logo.svg/1200px-Lamborghini-Logo.svg.png" class="css-1ux6sy9" alt="" height="140" width="130">
+							</a>
+						</div>
+					</td>
+					<td>
+	
+					</td>
+					<td>
+						<h1>
+							BIENVENUE SUR L'<span style = "color : rgb(216 , 160 , 22);">ENT</span> DU <span style = "color : rgb(216 , 160 , 22);">SECTEUR COMMERCIAL</span>
+						</h1>
+					</td>
+				</tr>
+			</table>
+
 		</header>
 		<form>
 			<fieldset>
@@ -44,13 +53,13 @@
 						<p class = "question">
 							Souhaitez-vous accéder à vos horaires de travail ?
 						</p>
-						<div class = "reponse">
+						<div class = "réponse">
 							<input type = "radio" id = "oui" name = "horaire" value = "oui">
 							<label for = "oui">
 								Oui
 							</label>
 						</div>
-						<div class = "reponse">
+						<div class = "réponse">
 							<input type = "radio" id = "non" name = "horaire" value = "non">
 							<label for = "non">
 								Non
@@ -135,7 +144,7 @@
 			<!-- Question n°6-->
 					<div class = "question6">
 						<p class = "question">
-							Est-ce que vous souhaiterez avoir un espaces dédiés à votre service pour pouvoir échanger avec vos collègues ?
+							Est-ce que vous souhaiterez avoir un espace dédié à votre service pour pouvoir échanger avec vos collègues ?
 						</p>
 						<div class = "réponse">
 							<input type = "radio" id = "oui" name = "échange" value = "oui">
@@ -154,7 +163,7 @@
 			<!-- Question n°7-->
 					<div class = "question7">
 						<p class = "question">
-							Voudriez vous accédé aux statistique des ventes personnel de chaque semaines ?
+							Voudriez-vous accéder aux statistiques des ventes personnelles de chaque semaine ?
 						</p>
 						<div class = "réponse">
 							<input type = "radio" id = "oui" name = "ventesperso" value = "oui">
@@ -173,7 +182,7 @@
 			<!-- Question n°8-->
 					<div class = "question8">
 						<p class = "question">
-							Es ce que vous souhaitez avoir un acceder a la messagerie de l’entreprise pour contacter la direction ?
+							Est-ce que vous souhaitez avoir un accès à la messagerie de l’entreprise pour contacter la direction ?
 						</p>
 						<div class = "réponse">
 							<input type = "radio" id = "oui" name = "messageriedirection" value = "oui">
@@ -192,7 +201,7 @@
 			<!-- Question n°9-->
 					<div class = "question9">
 						<p class = "question">
-							Es ce que vous souhaiterez accéder aux informations quotidiennes de l’entreprises ?
+							Est-ce que vous souhaiterez accéder aux informations quotidiennes de l’entreprise ?
 						</p>
 						<div class = "réponse">
 							<input type = "radio" id = "oui" name = "informations" value = "oui">
@@ -211,7 +220,7 @@
 			<!-- Question n°10-->
 					<div class = "question10">
 						<p class = "question">
-							Si oui Es ce que vous préfériez une page dédié ou clament un zone discrète
+							Si oui, est-ce que vous préfèriez une page dédiée ou juste une zone discrète ?
 						</p>
 						<div class = "réponse">
 							<input type = "radio" id = "oui" name = "informations2" value = "oui">
@@ -248,22 +257,27 @@
 			
 			<!-- Ceci est une question avec possibilité de repondre dans une zone predéfinie-->
 			<!-- Question n°12-->
-					<div class = "réponse">
+					<div class = "question">
+						<br/>
 						<details>
 							<summary>
 								<label for = "proposition">
-									Est-ce que vous avez des propositions pour améliorer l'ENT de notre entreprise ? 
+									<p class = "question">
+										Est-ce que vous avez des propositions pour améliorer l'ENT de notre entreprise ? 
+									</p>
 								</label>
 							</summary>
 							<br/>
 							<textarea id = "proposition" name = "proposition" rows = "5" cols ="75" style = "resize:none;" placeholder = "Saisissez vos propositions ici..."></textarea>
 						</details>	
 					</div>
-
-			
+					<br/>
+					<br/>
 				<!-- Ceci est le bouton permettant de valider le questionnaire -->
 					<button>
-						Valider le questionnaire
+						<a href = ./fendform.html>
+							Valider le formulaire
+						</a>
 					</button>
 			</fieldset>
 		</form>
