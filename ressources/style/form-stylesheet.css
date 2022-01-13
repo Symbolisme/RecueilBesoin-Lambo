@@ -1,42 +1,40 @@
-																							/*********************************/
-																							/*                               */
-																							/*        FORM STYLESHEET        */
-																							/*                               */
-																							/*********************************/
-
 body {
 	margin:0;
 	font-family: Roboto, Helvetica Neue, Arial;
 }
 
-
 header {
 	padding:10px;
 	margin:0;
-	background-color : black;
+	background-color : rgb(24 , 24 , 24);
 	color : white;
 	text-align:center;
 }
 legend {
+    font-size: 25px;
 	width: 400px;
 	text-align: center;
 	text-transform: uppercase;
 	color : rgb(216 , 160 , 22);
-	background : repeat url(../images/carbon.jpg);
+	background : repeat url(../images/carbonv4.jpg);
 	border-width: 3px;
 	border-style: groove;
 	border-color: rgb(216 , 160 , 22);
 }
 fieldset {
 	color : rgb(216 , 160 , 22);
-	background : repeat url(../images/carbon.jpg);
+	background : rgb(24 , 24 , 24);
 	border-color : rgb(216 , 160 , 22);
-	margin-top :5%;
+	margin-top :3%;
 	margin-left: 25%;
 	margin-right: 25%;
 	border-style: groove;
 	border-width: 6px;
 
+}
+
+table {
+    border-spacing :200px 0px;
 }
 
 .subtitle {
@@ -45,6 +43,16 @@ fieldset {
 
 .main-title {
 	text-align: center;
+}
+
+.zoom img {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+ }
+
+.zoom:hover img {
+    -webkit-transform : scale(1.10);
+    transform : scale(1.10);
 }
 
 input[type='range']:after {
@@ -82,7 +90,7 @@ input[type='radio']:checked:after {
 	border: 2px solid white;
 }
 
-/* */
+/* Custom Range Input */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     input[type='range'] {
       overflow: hidden;
@@ -104,4 +112,55 @@ input[type='radio']:checked:after {
       box-shadow: -80px 0 0 80px rgb(216 , 160 , 22);
     }
 
+}
+input[type='submit'] {
+    font-size: 15px;
+    border-style: groove ;
+    border-color : black;
+}
+input[type='submit']:hover {
+    background : rgb(216 , 160 , 22);
+}
+
+input[type='text'] {
+    font-size: 15px;
+}
+
+/* -- Custom Button -- */
+
+button {
+    font-size: 20px;
+    margin-left: 37%;
+    width: 250px;
+    height: 50px;
+    border-style: groove ;
+    border-color : black;
+}
+
+button:hover {
+    background: rgb(216 , 160 , 22);
+}
+
+button::selection {
+    background :rgb(216 , 160 , 0)
+
+}
+
+select:focus > option:checked {
+    background :rgb(216 , 160 , 22);
+}
+
+
+p.question {
+    font-size: 20px;
+}
+div.réponse {
+    font-size: 20px;
+    color : white;
+}
+
+select {
+    font-size: 15px;
+    width : 50%;
+    height: 50%; 
 }
